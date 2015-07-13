@@ -62,6 +62,20 @@ BOARD_CUSTOM_BOOTIMG_MK := device/htc/m8/mkbootimg.mk
 TARGET_KERNEL_CONFIG := fusion_defconfig
 TARGET_KERNEL_SOURCE := kernel/htc/msm8974
 
+# Fusion Optimizations
+FUSION_OPT=true
+FUSION_O3 := true
+FUSION_STRICT := true
+FUSION_OFAST := true
+FUSION_KRAIT := true
+FUSION_GRAPHITE := true
+FUSION_PIPE := true
+FUSION_ENABLE_GCCONLY := true
+FLOOP_NEST_OPTIMIZE := true
+FUSION_FFAST_MATH := true
+TARGET_FUSION_ROM := 4.9
+TARGET_FUSION_KERNEL := 4.9-sm
+
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
 
