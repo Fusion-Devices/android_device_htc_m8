@@ -159,6 +159,10 @@ BOARD_USES_MMCUTILS := true
 TARGET_RECOVERY_FSTAB := device/htc/m8/rootdir/etc/fstab.qcom
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 
+# TWRP Build Flags
+BOARD_RECOVERY_BLDRMSG_OFFSET := 2048
+DEVICE_RESOLUTION := 1080x1920
+
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += device/htc/m8/sepolicy
